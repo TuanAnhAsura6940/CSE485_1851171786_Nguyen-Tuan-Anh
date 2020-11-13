@@ -102,7 +102,11 @@
                         </ul>
                     </li>
                     <li><a href="#">LIÊN HỆ</a></li>
+                    <li><a href="forum.php">DIỄN ĐÀN</a></li>
+                    
+            
                     </ul>
+                    
                 </div>
                 </div>
             

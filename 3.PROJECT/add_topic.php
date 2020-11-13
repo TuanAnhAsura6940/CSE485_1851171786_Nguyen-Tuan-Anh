@@ -1,6 +1,6 @@
 <?php
 
-require("config.php");
+require("config1.php");
 $topic=$_POST['topic'];
 $detail=$_POST['detail'];
 $name=$_POST['name'];

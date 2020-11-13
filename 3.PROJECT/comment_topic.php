@@ -13,7 +13,7 @@
 </style>
 <?php
 
-require("config.php");
+require("config1.php");
 $id = $_GET['id'];
 $list = mysqli_query($conn,"SELECT * FROM `forum_question` WHERE id = $id") or die ("Lỗi Truy Vấn");
 $result = mysqli_fetch_object($list);

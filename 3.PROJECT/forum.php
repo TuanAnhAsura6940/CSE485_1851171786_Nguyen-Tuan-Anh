@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diễn Đàn</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <html class="container">
      <header>
-         <a href="index.php"><img src="img/logo.jpg" width="600" height="100" alt=""></a>
+         <a href="index.php"><img src="img/logo2.jpg" width="600" height="100" alt=""></a>
      </header>
      
      <body>
@@ -19,9 +19,9 @@
                     <li><a href='index.php'>Trang Chủ</a></li>
                    <li><a href='forum.php'>Diễn Đàn</a></li>
                    <li><a href='create_topic.php'>Thêm Bài Viết</a></li>
-                   <li><a href="view_topic.php">Xem Bài Viết</a></li>
-                   <li><a href="login.php">Đăng Nhập</a></li>
-                   <li><a href="register.php">Đăng Ký</a></li>
+                   <li><a href='view_topic.php'>Xem Bài Viết</a></li>
+                   <li><a href='login.php'>Đăng Nhập</a></li>
+                   <li><a href='register.php'>Đăng Ký</a></li>
 
                </ul>
             </div>

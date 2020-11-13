@@ -10,16 +10,17 @@
 <body>
 <html class="container">
      <header>
-         <a href="index.php"><img src="img/logo.jpg" width="600" height="100" alt=""></a>
+         <a href="index.php"><img src="img/logo2.jpg" width="600" height="100" alt=""></a>
      </header>
      <nav>
             <div class="menu">
                <ul>
+                
                    <li><a href='forum.php'>Diễn Đàn</a></li>
                    <li><a href='create_topic.php'>Thêm Bài Viết</a></li>
-                   <li><a href="view_topic.php">Xem Bài Viết</a></li>
-                   <li><a href="#">Đăng Nhập</a></li>
-                   <li><a href="#">Đăng Ký</a></li>
+                   <li><a href='view_topic.php'>Xem Bài Viết</a></li>
+                   <li><a href="login.php">Đăng Nhập</a></li>
+                   <li><a href="register.php">Đăng Ký</a></li>
 
                </ul>
             </div>
@@ -59,7 +60,7 @@ tr:nth-child(even) {
 
 </tr>
 <?php
-require("config.php");
+require("config1.php");
 $list = mysqli_query($conn,"SELECT* FROM forum_question") or die ("Lỗi Truy Vấn");
 $i = 1;
 while ($r = mysqli_fetch_array($list)) {

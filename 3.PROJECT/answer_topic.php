@@ -1,6 +1,6 @@
 <?php
 
-require("config.php");
+require("config1.php");
 
 $comment=$_POST['comment'];
 $a_name=$_POST['a_name'];
