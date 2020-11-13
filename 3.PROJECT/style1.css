@@ -73,7 +73,7 @@ article .new_list .new_item .content{
 }
 .text {
     display: block;
-    width: 100px;
+    width: 120px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

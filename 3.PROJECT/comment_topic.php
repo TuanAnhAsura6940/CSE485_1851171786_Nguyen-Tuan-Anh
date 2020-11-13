@@ -22,12 +22,14 @@ $result = mysqli_fetch_object($list);
     <thead class="table1">
         <?php 
             ?>
-        <tr>
-            <th>Bài Viết Vào Lúc</th>
-            <td bgcolor="#F8F7F1"><?php echo $result->datetime; ?></td>
-        </tr>
+        
     </thead>
     <tbody>
+    <tr>
+            <th>Bài Viết Vào Lúc</th>
+            <td><label for="label1" cols="10" row="1" border="1"></label></td>
+            <td bgcolor="#F8F7F1"><label><?php echo $result->datetime; ?></label></td>
+        </tr>
         <tr>
             <td>Chủ Đề </td>
             <td><label for="label1" cols="10" row="1" border="1"></label></td>
@@ -65,17 +67,33 @@ $result = mysqli_fetch_object($list);
       <thead>
           <tr>
               <th>Các Bình Luận</th>
-              <th></th>
+              <table>
+
+<?php
+
+$list = mysqli_query($conn,"SELECT* FROM forum_answer") or die ("Lỗi Truy Vấn");
+$i = 1;
+while ($r = mysqli_fetch_array($list)) {
+    echo "<tr>";
+    echo "<td>" . $i . "</td>";
+    echo "<td>" . $r["a_name"] . "</td>"; 
+    echo "<td class = 'text'>" . $r["comment"] . "</td>";
+    echo "<td>" . $r["datetime"] . "</td>";
+    $i++;
+}
+?>
+              </table>
+              
           </tr>
       </thead>
       <tbody>
-          <tr>
-              <td scope="row"></td>
-              <td>Nhập Bình Luận:</td>
-              <td><input id="comment" type="text" placeholder="Bình Luận"></td>
-              <td><button name ="button" type="button" href='answer_topic.php'>Bình Luận</button></td>
-              <td>Tên Hiển Thị:<input id=a_name></td>
-          </tr>
+          <form action="answer_topic.php" method="post">
+            <label for="comment">Bình Luận:</label>
+            <input type="text" id="comment" name="comment"><br><br>
+            <label for="a_name">Tên Hiển Thị:</label>
+            <input type="text" id="a_name" name="a_name"><br><br>
+            <input type="submit" value="Bình Luận">
+</form>
       </tbody>
   </table>
 </body>
