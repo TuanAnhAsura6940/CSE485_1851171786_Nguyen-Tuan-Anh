@@ -10,7 +10,7 @@ $result=mysqli_query($conn,$sql);
 
 if($result){
 echo "Thêm Thành Công<BR>";
-echo "<a href=view_topic.php>Xem Bài Viết</a>";
+echo "<a href=comment_topic.php>Xem Bài Viết</a>";
 }
 else {
 echo "ERROR";
